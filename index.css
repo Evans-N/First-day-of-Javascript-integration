@@ -1,0 +1,35 @@
+:root{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+.tab-list{
+    display:flex;
+    justify-content: flex-start;
+}
+.item{
+    list-style: none;
+    margin: 5px 10px;
+    border: 1px solid currentColor;
+    padding: 10px;
+    border-bottom:0;
+}
+.hidden{
+    display:none;
+}
+.tab-container .tab-content:first-child{
+    display:block;
+}
+.tab-content{
+    border:1px solid currentColor;
+    padding:20px;
+}
+.tabs-container{
+    position: relative;
+    top:-29px;
+}
+.selected{
+    background-color: red;
+    color:black;
+}
